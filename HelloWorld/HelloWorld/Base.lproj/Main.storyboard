@@ -29,6 +29,9 @@
                                 <state key="normal" title="Welcome">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="welcomePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KO7-FW-Ofp"/>
+                                </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hello-World" translatesAutoresizingMaskIntoConstraints="NO" id="AEd-M4-SXJ">
                                 <frame key="frameInset" minX="16" minY="20" width="343" height="128"/>
@@ -37,6 +40,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="background" destination="xev-iT-OTi" id="45J-HM-5Kp"/>
+                        <outlet property="titleImage" destination="AEd-M4-SXJ" id="8bO-wg-gIG"/>
+                        <outlet property="welcomeBtn" destination="pUR-YT-xuy" id="TYG-3S-6nU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
